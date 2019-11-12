@@ -66,7 +66,7 @@ for(var i=0;i<5;++i) {
             
             // TODO 4: Part 1 - Add a tree
             tree = draw.bitmap('img/tree.png');
-tree.x = 1000;
+tree.x = 100.0;
 tree.y = 10;
 background.addChild(tree);
             
