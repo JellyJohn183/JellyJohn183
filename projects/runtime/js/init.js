@@ -24,7 +24,7 @@ var init = function (window) {
         playerManager, 
         particleManager;
     
-    var debugHalleHitZones = false;
+    var debugHalleHitZones = true;
 
     space = app.space;
     rules = app.rules,
@@ -68,6 +68,7 @@ var init = function (window) {
             physikz.updatePosition(body);
             physikz.updateSpace(space, physikz.hitTestRadial, rules.handleCollision);
             playerManager.hitTest(body);
+       
         });
     }
     
@@ -77,14 +78,10 @@ var init = function (window) {
                 window.hud = hud;
                 hud.updateScore(10);
 
-hud.updateOf(1000);
 
-hud.setIntegrity(25);
-
-hud.setIntegrity(100);
-
-hud.kill();
     // TODO 6 : create game manager
+        var game = opspark.createGameManager(app,hud);
+        opspark.runLevelInGame(game);
 
 
 };
