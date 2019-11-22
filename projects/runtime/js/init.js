@@ -24,7 +24,7 @@ var init = function (window) {
         playerManager, 
         particleManager;
     
-    var debugHalleHitZones = true;
+    var debugHalleHitZones = false;
 
     space = app.space;
     rules = app.rules,
@@ -35,7 +35,7 @@ var init = function (window) {
     var background = opspark.makeBackground(app,ground);
     view.addChild(background);
     
-    var help = draw.textfield('MOVES || up: jump | right: flying jump | down: duck *QUACK!!!*| space: fire!!!! | q: commit death!', 
+    var help = draw.textfield('MOVES || UP: JUMP!!! | RIGHT: JUMPING UP AND LEVITATE | DOWN: DUCK! *QUACK!!!*| SPACE: FIIIREE!!!! | q: COMMIT ALT + F4', 
         '20px Arial',
         '#ccc', 'left');
     help.x = 10;
