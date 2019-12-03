@@ -16,12 +16,12 @@ var level01 = function (window) {
             number: 1, 
             speed: -3,
             gameItems: [
-                {type: 'sawblade',x:400,y:groundY},
+                {type: 'sawblade',x:400,y:600},
                 {type: 'sawblade',x:600,y:groundY},
                 {type: 'sawblade',x:900,y:groundY}
             ]
         };
-        for (i = 0; i < levelData.gameItems.length; i++) {
+        for (var i = 0; i < levelData.gameItems.length; i++) {
             var gameItem = gameItems[i]
         }
         window.levelData = levelData;
